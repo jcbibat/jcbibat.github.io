@@ -9,17 +9,42 @@ body{
 .container{
     width:80%;
     margin:auto;
-    color:#193441;
+    overflow:hidden;
     font-family: verdana;
+}
+
+header h1{
+    color:#FCFFF5;  
 }
 
 header{
     background-color:#193441;
-    color:#91AAB4;
+    color:#FCFFF5;
+    padding-top: 30px;
+    min-height: 60px;
+    border-bottom: gray 5px solid;
+}
+
+header a{
+    color:#FCFFF5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul{
+    margin:0;
+    padding:0;
+}
+
+header li{
+    float: left;
+    display:inline;
+    padding: 0 20px ;
 }
 
 a:hover{
-    color:royalblue;
+    color:royalblue;                              
 }
 
 a:active {

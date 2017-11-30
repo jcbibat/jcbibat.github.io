@@ -1,0 +1,27 @@
+body{
+    font:15px/1.5 Verdana, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+    background-color:#FCFFF5;
+}
+
+
+.container{
+    width:80%;
+    margin:auto;
+    color:#193441;
+    font-family: verdana;
+}
+
+header{
+    background-color:#193441;
+    color:#91AAB4;
+}
+
+a:hover{
+    color:royalblue;
+}
+
+a:active {
+    color:red;
+}

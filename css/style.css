@@ -38,9 +38,17 @@ header ul{
 }
 
 header li{
+    display: inline;
     float: left;
-    display:inline;
-    padding: 0 20px ;
+    padding: 0 20px 0 20px ;
+}
+header #branding{
+    float:left;
+}
+
+header #navigation{
+    float:right
+    margin-top:10px;
 }
 
 a:hover{

@@ -74,7 +74,8 @@ a:active {
 
 #showcase {
     min-height: 800px;
-    background:url('../img/8ncj88qz0evy.jpg') no-repeat -1600px ;
+    background-position: center;
+    background:url('../img/8ncj88qz0evy.jpg') no-repeat;
     text-align: center;
     color:#ffffff;
 }

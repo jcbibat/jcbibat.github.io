@@ -2,7 +2,7 @@ body{
     font:15px/1.5 Verdana, Helvetica, sans-serif;
     padding:0;
     margin:0;
-    background-color:#FCFF;
+    background-color:#ffd769;
 }
 
 
@@ -18,11 +18,11 @@ header h1{
 }
 
 header{
-    background-color:black;
-    color:purple;
+    background-color:#6c9ceb;
+    color:black;
     padding-top: 30px;
     min-height: 60px;
-    border-bottom: purple 5px solid;
+    border-bottom: black 5px solid;
 }
 
 header a{
@@ -52,16 +52,16 @@ header nav{
 }
 
 header a:hover{
-    color:magenta;                              
+    color:#7d5e02;                              
 }
 
 header .highlight{
-    color:purple;
+    color:#ffd769;
     font-weight:bold;
 }
 
 header .current{
-    color:purple;
+    color:#7d5e02;
     font-weight:bold;
     font-size: 16;
     text-decoration: none;
@@ -75,9 +75,10 @@ a:active {
 #showcase {
     min-height: 800px;
     background-position: center;
-    background:url('../img/8ncj88qz0evy.jpg') no-repeat;
+    background:url('../img/Bacc.jpg') no-repeat -700px -1300px;
     text-align: center;
     color:#ffffff;
+    border-bottom: black 5px solid;
 }
 
 #showcase h1{

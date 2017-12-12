@@ -2,7 +2,7 @@ body{
     font:15px/1.5 "abel", sans-serif;
     padding:0;
     margin:0;
-    background-color:#ffd769;
+    background-color:#000000;
 }
 
 
@@ -18,11 +18,10 @@ header h1{
 }
 
 header{
-    background-color:#6c9ceb;
+    background-color:#000000;
     color:black;
     padding-top: 30px;
     min-height: 60px;
-    border-bottom: #7F6B34 5px solid;
 }
 
 header a{
@@ -43,12 +42,14 @@ header li{
     padding: 0 20px 0 20px ;
 }
 header #branding{
-    float:left;
+    text-align:center;
+    font-size:32;
 }
 
 header nav{
-    float:right;
-    margin-top:40px;
+    margin-top:20px;
+    text-align:center;
+    margin-left
 }
 
 header a:hover{
@@ -56,7 +57,7 @@ header a:hover{
 }
 
 header .highlight{
-    color:#ffd769;
+    color:grey;
     font-weight:bold;
 }
 
@@ -68,17 +69,14 @@ header .current{
     text-transform: uppercase;
 }
 
-a:active {
-    color:red;
-}
-
 #showcase {
-    min-height: 800px;
-    background-position: center;
-    background:url('../img/Bacc.jpg') no-repeat -700px -1300px;
+    min-height: 1005px;
+    background:url('../img/picc.png') no-repeat 250px -500px ;
+    height: 100vh;
+    background-size: auto;
+    background-position: center;  
     text-align: center;
     color:#ffffff;
-    border-bottom: #7F6B34 5px solid;
 }
 
 #showcase h1{
@@ -97,11 +95,36 @@ a:active {
     color:#40361A;
 }
 
-#boxes h2{
-    font-family: "abel", sans-serif
+#boxes{
+    font-family: "abel", sans-serif;
+    color:white;
 }
 
 .headline{
     font-size:30px;
+    color:white;
+}
+
+.button{
+    margin-top: 375px;
+    color:#ffffff;
+}
+
+.btn {
+  padding:30px;
+  padding-top:10px;
+  color: black;
+  text-decoration: none;
+  margin-right: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+
+.btn:hover{
+    color:white;
+    background:url('../img/coggs.png');
+    background-color:black;
+    transition: all 0.50s ease-in;
 }
 

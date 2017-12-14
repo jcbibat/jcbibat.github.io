@@ -50,10 +50,12 @@ header #branding{
 }
 
 header nav{
+    padding-top:6px;
     margin-top:20px;
     float:center;
     margin-left:10;
     text-align: center;
+    background-color:grey;
 }
 
 header a:hover{
@@ -66,7 +68,7 @@ header .highlight{
 }
 
 header .current{
-    color:#7d5e02;
+    color:#4f6487;
     font-weight:bold;
     font-size: 16;
     text-decoration: none;

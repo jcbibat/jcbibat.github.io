@@ -259,6 +259,61 @@ header .current{
     transition: all 0.50s ease-in;
 }
 
+.dropbtn {
+  padding:20px;
+  padding-top:10px;
+  background-color:gray;
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+  font-size: 16px;
+  text-transform: uppercase
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position:fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 99999;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color:lightgray;
+    font-size:15px;
+}
+
+
+.dropdown-content a:hover{
+    color:#4f6487;
+    color:black;
+    background-color:white;
+    transition: all 0.50s ease-in;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    color:black;
+    background-color:white;
+    transition: all 0.50s ease-in;
+}
 
 footer p{
     font-family:"abel";

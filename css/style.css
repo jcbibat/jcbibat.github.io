@@ -213,6 +213,10 @@ header .current{
     color:grey;
 }
 
+#boxes a:hover{
+    color:grey;
+}
+
 
 /*Button Stuff*/
 .button{

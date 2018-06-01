@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Processing Demo</title>
+        <script type = "text/javascript" src= "./JAVA/bibat_1.js"></script>
+    </head>
+    <body>
+        <script type="text/processing">
+            PImage back;
+            PImage face;
+            PFont Font1;
+            int count = 0; int y = 0; int Vy = 0;
+            int gameState = 0;
+            
+            
+            void setup(){
+              size(748,421);
+              back = loadImage("./image/bg.png");
+              face = loadImage("./image/plane.png");
+              Font1 = createFont("Arial Bold Italic", 18);
+              //image(back,0,0);
+            }
+            
+            void draw(){
+              if (gameState ==0){
+                image(back, count, 0);
+                image(back,  width + count, 0);
+                count--;
+                if (count == -width){
+                  count = 0;
+                }
+                image(face, 100, y);
+                if(count%3 == 0){
+                  Vy += 1;
+                }
+                y = y + Vy;
+              }
+              if (y < -40 || y > 450){
+                gameState = 1;
+              }
+              
+              if (gameState == 1){
+                background(0,0,0);
+                fill(0);
+                rect(217.5, 168, 275, 55, 5);
+                fill(255,0,0);
+                textFont(Font1);
+                textSize(50);
+                text("Restart? ;)", 230, 210.5);
+                if (mouseX > 217.5 && mouseX < 492.5 && mouseY > 168 && mouseY < 218){
+                  background(252,255,244);
+                  fill(0);
+                  rect(217.5, 168, 275, 55, 5);
+                  fill(252,255,244);
+                  textFont(Font1);
+                  textSize(50);
+                  text("Restart? ;)", 230, 210.5);
+                  if(mousePressed){
+                    gameState = 0; y = 50;
+                  }
+                }
+              }
+            }
+            
+            
+            void keyPressed(){
+              if (keyCode == UP){
+                Vy = -10;
+              }
+              if (keyCode == DOWN){
+                Vy = +10;
+              }
+            }
+            
+            void keyReleased(){
+              if (keyCode == UP || keyCode == DOWN){
+                Vy = 0;
+              }
+            }
+        </script>
+    <canvas id = "sketch" style = "border: 1px solid black;"></canvas>
+    </body>
+</html>
